@@ -20,7 +20,7 @@ RSpec.describe "Dashboard", type: :request do
             }
           }
         end.to change { Tweet.count }.by(1)
-        expect(response).to redirect_to(dashboard_path)
+        expect(response).to redirect_to(dashboard_path )
       end
     end
   end
